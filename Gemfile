@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.1'
-gem 'haml', '~> 5.0', '>= 5.0.4'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
@@ -39,7 +39,8 @@ gem 'bcrypt', '~> 3.1.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 #gem 'pry', '~> 0.12.2'
-
+gem 'haml-rails', '~> 0.9.0'
+#gem 'haml', '~> 5.0', '>= 5.0.4'
 group :test, :development do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
